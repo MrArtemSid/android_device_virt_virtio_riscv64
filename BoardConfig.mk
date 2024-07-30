@@ -17,6 +17,8 @@ include device/virt/virtio-common/BoardConfigCommon.mk
 USES_DEVICE_VIRT_VIRTIO_RISCV64 := true
 DEVICE_PATH := device/virt/virtio_riscv64
 
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Arch
 TARGET_ARCH := riscv64
 TARGET_ARCH_VARIANT := riscv64
