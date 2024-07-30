@@ -22,7 +22,8 @@ PRODUCT_AAPT_PREF_CONFIG := tvdpi
 PRODUCT_CHARACTERISTICS := tv
 
 PRODUCT_VENDOR_PROPERTIES += \
-    config.disable_renderscript=1
+    config.disable_renderscript=1 \
+    config.disable_cameraservice=true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
