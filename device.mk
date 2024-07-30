@@ -25,6 +25,13 @@ PRODUCT_VENDOR_PROPERTIES += \
     config.disable_renderscript=1 \
     config.disable_cameraservice=true
 
+# Lightweight launcher
+USE_OEM_TV_APP := true
+PRODUCT_PACKAGES += \
+    TvSettingsTwoPanel \
+    DeskClock \
+    RpLauncher
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
