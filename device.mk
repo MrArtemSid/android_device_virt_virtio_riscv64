@@ -12,6 +12,15 @@ TARGET_PREBUILT_KERNEL_MODULES_ARCH := riscv64
 # Inherit from common
 $(call inherit-product, device/virt/virtio-common/device-common.mk)
 
+# ATV
+PRODUCT_IS_ATV := true
+
+# AAPT
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
+
+# Characteristics
+PRODUCT_CHARACTERISTICS := tv
+
 PRODUCT_VENDOR_PROPERTIES += \
     config.disable_renderscript=1
 
